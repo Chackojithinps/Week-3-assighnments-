@@ -272,9 +272,38 @@
 
 
  //variable hoisting
- 
+
 // console.log(x);
 // let x=3;           
 // console.log(x)
 
+//nameless funcitons
 
+// const myFunc=function(){
+//   console.log("jithin")
+// }
+// myFunc()
+
+// const sum=function(a,b){
+//    return a+b
+// }
+// function abc(x){
+  //  console.log(sum(10,20))
+  // const k=x(10,20)
+  // return k;
+// }
+// console.log(sum(10,20))
+// console.log(abc(sum))
+
+
+// const sum=function(a,b){
+  // return a+b
+// }
+// function abc(x){
+ //  console.log(sum(10,20))
+//  const k=x
+//  return k;
+    // return x
+// }
+// console.log(sum(10,20))
+// console.log(abc(sum(10,20)))
