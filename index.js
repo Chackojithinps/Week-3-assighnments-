@@ -317,30 +317,47 @@
 //   var x=document.getElementById('fname')
 //   x.value=x.value.toUpperCase();
 // }
-document.getElementById('btn').addEventListener("click",function(){
-  Myfunc(10,20)
-})
-document.getElementById('btn').addEventListener("mouseover",function(){
-  document.getElementById('btn').innerHTML="you can click"
-})
-document.getElementById('btn').addEventListener("mouseout",function(){
-  document.getElementById('btn').innerHTML="click me"
-})
-const Myfunc=(a,b)=>{
-   document.getElementById('demp').innerHTML=a+b;
-}
+// document.getElementById('btn').addEventListener("click",function(){
+//   Myfunc(10,20)
+// })
+// document.getElementById('btn').addEventListener("mouseover",function(){
+//   document.getElementById('btn').innerHTML="you can click"
+// })
+// document.getElementById('btn').addEventListener("mouseout",function(){
+//   document.getElementById('btn').innerHTML="click me"
+// })
+// const Myfunc=(a,b)=>{
+//    document.getElementById('demp').innerHTML=a+b;
+// }
 
-var a=document.getElementById('fname')
-const clikedBtn=()=>{
-   document.getElementById('demp').innerHTML=a.value;
-}
-document.getElementById('btn').addEventListener("click",clikedBtn)
+// var a=document.getElementById('fname')
+// const clikedBtn=()=>{
+//    document.getElementById('demp').innerHTML=a.value;
+// }
+// document.getElementById('btn').addEventListener("click",clikedBtn)
 
-var heading=document.createElement('h1')
-document.getElementById('btn').addEventListener('click',function(){
-   heading.innerHTML="Hello world"
-   document.body.appendChild(heading)
-})
-document.getElementById('btn2').addEventListener('click',function(){
-  heading.remove();
-})
+// var heading=document.createElement('h1')
+// document.getElementById('btn').addEventListener('click',function(){
+//    heading.innerHTML="Hello world"
+//    document.body.appendChild(heading)
+// })
+// document.getElementById('btn2').addEventListener('click',function(){
+//   heading.remove();
+// })
+
+class Person{
+   constructor(name,age,place){
+    this.name=name;
+    this.age=age;
+    this.place=place;
+   }
+   getName(){
+     document.write("The name of the person is "+this.name);
+   }
+}
+const obj=new Person("kiran",30,"kannur");
+const obj1=new Person("arun",30,"kannur");
+const obj2=new Person("krishnan",30,"kannur");
+obj.getName();
+obj1.getName();
+obj2.getName();
