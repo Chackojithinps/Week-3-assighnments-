@@ -270,6 +270,9 @@
   //   console.log(row);
   // }
 
+
+ //variable hoisting
+ 
 // console.log(x);
 // let x=3;           
 // console.log(x)
