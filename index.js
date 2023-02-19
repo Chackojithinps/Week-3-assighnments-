@@ -307,3 +307,40 @@
 // }
 // console.log(sum(10,20))
 // console.log(abc(sum(10,20)))
+
+// closure
+
+// var obj=new abc();
+// obj.set(10,20);
+
+// const upperCase=()=>{
+//   var x=document.getElementById('fname')
+//   x.value=x.value.toUpperCase();
+// }
+document.getElementById('btn').addEventListener("click",function(){
+  Myfunc(10,20)
+})
+document.getElementById('btn').addEventListener("mouseover",function(){
+  document.getElementById('btn').innerHTML="you can click"
+})
+document.getElementById('btn').addEventListener("mouseout",function(){
+  document.getElementById('btn').innerHTML="click me"
+})
+const Myfunc=(a,b)=>{
+   document.getElementById('demp').innerHTML=a+b;
+}
+
+var a=document.getElementById('fname')
+const clikedBtn=()=>{
+   document.getElementById('demp').innerHTML=a.value;
+}
+document.getElementById('btn').addEventListener("click",clikedBtn)
+
+var heading=document.createElement('h1')
+document.getElementById('btn').addEventListener('click',function(){
+   heading.innerHTML="Hello world"
+   document.body.appendChild(heading)
+})
+document.getElementById('btn2').addEventListener('click',function(){
+  heading.remove();
+})
