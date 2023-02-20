@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <ul id="elements">
+
+    </ul>
+    <script>
+        // setTimeout(()=>{
+        //     console.log("Hello")
+        // },2000)
+        // const arr=setTimeout(()=>{
+        //     console.log("Hello jithin")
+        // },4000)
+        // clearTimeout(arr)
+
+
+        // i=0;
+        // const counter=()=>{
+        //     i++;
+        //     console.log(i);
+        //     const count=setTimeout(()=>{
+        //         return counter()
+        //     },2000)
+        //     if(i==5){
+        //       clearTimeout(count)
+        //     }
+        // }
+        // setTimeout(counter,1000);
+
+        // i=0;
+        // const counter=()=>{
+        //     i++;
+        //     console.log(i)
+        //     if(i==5){
+        //         clearInterval(count)
+        //     }
+        // }
+        
+        // const count=setInterval(counter,1000)
+        
+        // const promiseHello=new Promise((resolve,reject)=>{
+        //     // setTimeout(()=>resolve("Hello"),2000)
+        //     setTimeout(() => {
+        //         reject("rejected")
+        //     }, 2000);
+        // })
+        // promiseHello
+        // .then((value)=>document.write(value))
+        // .catch((err)=>document.write(err))
+        // document.write("Hai")
+
+        // const promiseHello=new Promise((resolve,reject)=>{
+        //     // setTimeout(()=>resolve("Hello"),2000)
+        //     setTimeout(() => {
+        //         reject("rejected")
+        //     }, 2000);
+        // })
+        // promiseHello
+        // .then((value)=>document.write(value))
+        // .catch((err)=>document.write(err))
+        // document.write("Hai")
+
+        // async function myDisplay(){
+        //     const promiseHello=new Promise((resolve,reject)=>{
+        //         // setTimeout(value=>resolve("Resolved the problem"),2000)
+        //         setTimeout(value=>reject(),2000)
+        //     })
+        //     // document.getElementById('demo').innerHTML=await promiseHello;
+        //     // console.log(await promiseHello)
+        //     try{
+        //         document.getElementById('demo').innerHTML=await promiseHello;
+        //     }catch{
+        //         console.log("err")
+        //     }
+        // }
+        // myDisplay()
+        
+        // callback
+
+        // function a(callback){
+        //     console.log("this is a");
+        //     callback()
+        // }
+        // function b(){
+        //     console.log("This is b")
+        // }
+        // a(b)
+        
+        // const posts=[
+        //     {id:1,name:"arun"},
+        //     {id:2,name:"kiran"},
+        // ]
+        // const getPosts=()=>{
+        //     let list='';
+        //     setTimeout(()=>{
+        //         posts.forEach((value)=>{
+        //             console.log("hello");
+        //             list+=`<li> ${value.id} - ${value.name}</li>`
+        //         })
+        //     document.getElementById('elements').innerHTML="hello";
+
+        //     },2000)
+            
+        // }
+        // getPosts();
+
+        // const addPosts=(post)=>{
+        //     posts.push(post)
+        // }
+        // addPosts({id:3,name:"jithin"})
+        // let list=''
+        // posts.forEach((post)=>{
+        //    list=` ${list} <li> ${post.id} - ${post.name} </li>`
+        // })
+        // document.getElementById('elements').innerHTML=list;
+        
+
+        const posts=[
+            {id:1,name:"arun"},
+            {id:2,name:"kiran"},
+        ]
+        const getPosts=()=>{
+            let list='';
+            console.log("ji")
+            setTimeout(()=>{
+                posts.forEach((value)=>{
+                    // console.log("hello");
+                    list+=`<li> ${value.id} - ${value.name}</li>`
+                })
+            document.getElementById('elements').innerHTML=list;
+
+            },2000)
+            
+        }
+        
+
+        const addPosts=(post)=>{
+            setTimeout(()=>{
+                posts.push(post)
+            },4000)
+        }
+        addPosts({id:3,name:"jithin"})
+        getPosts();
+      
+//    why undefined comes when call function in console
+
+    //  const myFunc=()=>{
+        // console.log("jithin");
+        // return "jithin"
+        // setTimeout(()=>{
+        //    console.log("kiran")
+        // },3000)
+    //  }
+    //  const k= myFunc()
+    //  console.log(k)
+    </script>
+</body>
+</html>

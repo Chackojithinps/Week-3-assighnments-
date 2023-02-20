@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="elements"></ul>
+</body>
+<script>
+     // function a(callback){
+        //     console.log("this is a");
+        //     callback()
+        // }
+        // function b(){
+        //     console.log("This is b")
+        // }
+        // a(b)
+        
+        // const posts=[
+        //     {id:1,name:"arun"},
+        //     {id:2,name:"kiran"},
+        // ]
+        // const getPosts=()=>{
+        //     let list='';
+        //     setTimeout(()=>{
+        //         posts.forEach((value)=>{
+        //             console.log("hello");
+        //             list+=`<li> ${value.id} - ${value.name}</li>`
+        //         })
+        //     document.getElementById('elements').innerHTML="hello";
+
+        //     },2000)
+            
+        // }
+        // getPosts();
+
+        // const addPosts=(post)=>{
+        //     posts.push(post)
+        // }
+        // addPosts({id:3,name:"jithin"})
+        // let list=''
+        // posts.forEach((post)=>{
+        //    list=` ${list} <li> ${post.id} - ${post.name} </li>`
+        // })
+        // document.getElementById('elements').innerHTML=list;
+        
+
+        const posts=[
+            {id:1,name:"arun"},
+            {id:2,name:"kiran"},
+        ]
+        const getPosts=()=>{
+            let list='';
+            console.log("ji")
+            setTimeout(()=>{
+                posts.forEach((value)=>{
+                    // console.log("hello");
+                    list+=`<li> ${value.id} - ${value.name}</li>`
+                })
+            document.getElementById('elements').innerHTML=list;
+
+            },2000)
+            
+        }
+        
+
+        const addPosts=(post)=>{
+            setTimeout(()=>{
+                posts.push(post)
+            },4000)
+        }
+        addPosts({id:3,name:"jithin"})
+        getPosts();
+      
+//    why undefined comes when call function in console
+
+    //  const myFunc=()=>{
+        // console.log("jithin");
+        // return "jithin"
+        // setTimeout(()=>{
+        //    console.log("kiran")
+        // },3000)
+    //  }
+    //  const k= myFunc()
+    //  console.log(k)
+</script>
+</html>
