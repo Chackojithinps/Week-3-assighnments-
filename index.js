@@ -355,9 +355,10 @@ class Person{
      document.write("The name of the person is "+this.name);
    }
 }
-const obj=new Person("kiran",30,"kannur");
+const obj=new Person();
 const obj1=new Person("arun",30,"kannur");
 const obj2=new Person("krishnan",30,"kannur");
+obj.name="kiran workey"
 obj.getName();
 obj1.getName();
 obj2.getName();
