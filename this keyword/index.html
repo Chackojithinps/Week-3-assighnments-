@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var name="kiran"
+    // const myObj={
+    //     name:"jithin",
+    //     age:12,
+    //     fullAddress:function(){
+    //        return this.name+" "+this.age
+    //     }
+    // }
+    // myObj.fullAddress();
+    // const fullAddress1=myObj.fullAddress
+    // const c=fullAddress1();
+    // console.log(c)
+
+    const myObj={
+        name:"jithin",
+        age:12,
+        fullAddress:function(){
+           console.log(this);
+        }
+    }
+    myObj.fullAddress();
+    const fullAddress1=myObj.fullAddress
+    fullAddress1()
+    fullAddress1.call(myObj)
+    // const c=fullAddress1();
+    // console.log(c)
+</script>
+</html>
