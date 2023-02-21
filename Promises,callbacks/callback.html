@@ -48,33 +48,154 @@
         // document.getElementById('elements').innerHTML=list;
         
 
-        const posts=[
-            {id:1,name:"arun"},
-            {id:2,name:"kiran"},
-        ]
-        const getPosts=()=>{
-            let list='';
-            console.log("ji")
-            setTimeout(()=>{
-                posts.forEach((value)=>{
-                    // console.log("hello");
-                    list+=`<li> ${value.id} - ${value.name}</li>`
-                })
-            document.getElementById('elements').innerHTML=list;
+        // const posts=[
+        //     {id:1,name:"arun"},
+        //     {id:2,name:"kiran"},
+        // ]
+        // const getPosts=()=>{
+        //     let list='';
+        //     console.log("ji")
+        //     setTimeout(()=>{
+        //         posts.forEach((value)=>{
+        //             // console.log("hello");
+        //             list+=`<li> ${value.id} - ${value.name}</li>`
+        //         })
+        //     document.getElementById('elements').innerHTML=list;
 
-            },2000)
+        //     },2000)
             
-        }
+        // }
         
 
-        const addPosts=(post)=>{
-            setTimeout(()=>{
-                posts.push(post)
-            },4000)
-        }
-        addPosts({id:3,name:"jithin"})
-        getPosts();
-      
+        // const addPosts=(post)=>{
+        //     setTimeout(()=>{
+        //         posts.push(post)
+        //     },4000)
+        // }
+        // addPosts({id:3,name:"jithin"})
+        // getPosts();
+
+
+        // const posts=[
+        //     {id:1,name:"arun"},
+        //     {id:2,name:"kiran"},
+        // ]
+        // const getPosts=()=>{
+        //     let list='';
+        //     console.log("ji")
+        //     setTimeout(()=>{
+        //         posts.forEach((value)=>{
+        //             // console.log("hello");
+        //             list+=`<li> ${value.id} - ${value.name}</li>`
+        //         })
+        //     document.getElementById('elements').innerHTML=list;
+
+        //     },2000)
+        // }
+        
+
+        // const addPosts=(post,callback)=>{
+        //     setTimeout(()=>{
+        //         posts.push(post)
+        //         callback()
+        //      },4000)
+        // }
+        // addPosts({id:3,name:"jithin"},getPosts)
+
+        //debug media callback()
+
+         // console.log("start")
+        // const getData=()=>{
+        //     setTimeout(()=>{
+        //         return ("Debug media")
+        //     },2000)
+        // }
+        // console.log(getData());
+        // console.log("End")
+       
+
+        // console.log("start")
+        // const getData=(callback)=>{
+        //     setTimeout(()=>{
+        //         return callback("debug media")
+        //     },2000)
+        // }
+        // getData((value)=>{
+        //     console.log(value)
+        // })
+        // console.log("End")
+        
+
+        // function a(callback){
+        //     console.log("kiran")
+        //     setTimeout(()=>{
+        //         callback("debug")
+        //     },3000)
+        // }
+        // function b(value){
+        //     console.log(value)
+        // }
+        // a(b)
+
+    //     const posts=[
+    //         {id:1,name:"jithin"},
+    //         {id:2,name:"arun"},
+    //     ]
+    //    function getPosts(){
+    //       setTimeout(()=>{
+    //         posts.forEach((value)=>{
+    //           console.log(value.id+" "+value.name);
+    //         })
+    //       },1000)
+           
+    //    }
+    //     const addPost=(post,callback)=>{
+
+    //         setTimeout(()=>{
+    //         posts.push(post)
+    //         callback()
+    //         },3000)
+    //     }
+    //     addPost({id:3,name:"kiran"},getPosts)
+        // getPosts()
+
+
+    //  function a(callback){
+    //     setTimeout(()=>{
+    //         console.log("This is a function")
+    //         callback();
+    //     },2000)
+    //  }
+    //  function b(){
+    //      setTimeout(()=>{
+    //         console.log("This is b function")
+    //      },1000)
+    //  }
+    //  a(b);
+
+    // console.log("start")
+    //     const getData=(callback)=>{
+    //         setTimeout(()=>{
+    //             return callback("debug media")
+    //         },2000)
+    //     }
+    //     const getData1=(callback)=>{
+    //         setTimeout(()=>{
+    //             return callback("debug media1")
+    //         },2000)
+    //     }
+    //     const getData2=(callback)=>{
+    //         setTimeout(()=>{
+    //             return callback("debug media2")
+    //         },2000)
+    //     }
+    //     getData((value)=>{
+    //         getData1((val1)=>{
+    //             console.log(val1)
+    //         })
+    //     })
+    //     console.log("End")
+    
 //    why undefined comes when call function in console
 
     //  const myFunc=()=>{
